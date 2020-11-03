@@ -2,6 +2,7 @@
 const express = require('express');
 var bodyParser = require('body-parser');
 const db = require('./config/mongoose');
+const cors = require('cors');
 
 const app = express();
 
@@ -13,6 +14,7 @@ const Port = process.env.Port || 8000;
 //Using body parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(cors());
 
 //use express router
 app.use('/', require('./routes/index.router'));

@@ -9,5 +9,6 @@ const collegeController = require('../controllers/college.controller');
 router.post('/create', collegeController.createCollege);
 router.post('/getCollege', collegeController.getCollege);
 router.post('/getSimilar', collegeController.getSimilarColleges);
+router.get('/getAllColleges', collegeController.getAllColleges);
 
 module.exports = router;

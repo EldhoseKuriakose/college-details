@@ -33,6 +33,23 @@ module.exports.createCollege = async function(req, res) {
     }
 }
 
+//Getting list of all colleges
+module.exports.getAllColleges = async function(req, res) {
+    try {
+        let list = [];
+        list = await College.find({});
+
+        return res.status(200).json({
+            message: "successful",
+            data: list
+        });
+    } catch (err) {
+        return res.status(500).json({
+            message: "Internal server error"
+        });
+    }
+}
+
 //Getting college details by name or id
 module.exports.getCollege = async function(req, res) {
     try {
