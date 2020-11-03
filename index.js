@@ -1,3 +1,4 @@
+//Import required dependencies or packages
 const express = require('express');
 var bodyParser = require('body-parser');
 const db = require('./config/mongoose');
@@ -6,8 +7,10 @@ const app = express();
 
 db();
 
+//Setting port for server to listen
 const Port = process.env.Port || 8000;
 
+//Using body parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 

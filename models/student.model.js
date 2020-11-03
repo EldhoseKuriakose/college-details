@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//Creating student schema
 const studentSchema = new mongoose.Schema({
     studentId: {
         type: Number,

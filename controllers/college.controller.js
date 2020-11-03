@@ -1,5 +1,7 @@
+//Require college model
 const College = require('../models/college.model');
 
+//Creating college details
 module.exports.createCollege = async function(req, res) {
     try {
         if(await req.body) {
@@ -31,6 +33,7 @@ module.exports.createCollege = async function(req, res) {
     }
 }
 
+//Getting college details by name or id
 module.exports.getCollege = async function(req, res) {
     try {
         if(await req.body) {
@@ -62,6 +65,7 @@ module.exports.getCollege = async function(req, res) {
     }
 }
 
+//get similar colleges by location
 module.exports.getSimilarColleges = async function(req, res) {
     try {
         if(await req.body) {

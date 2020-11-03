@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//Creating college schema
 const collegeSchema = new mongoose.Schema({
     collegeId: {
         type: Number,

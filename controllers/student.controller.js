@@ -1,5 +1,7 @@
+//Require student model
 const Student = require('../models/student.model');
 
+//Creating student details 
 module.exports.createStudent = async function(req, res) {
     try {
         if(await req.body) {
