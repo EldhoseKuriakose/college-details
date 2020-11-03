@@ -8,4 +8,4 @@
 5. `npm start` - To start the application
 
 ##### Technologies used
-React, nodeJS, ExpressJS, MongoDB
+ReactJS, nodeJS, ExpressJS, MongoDB
